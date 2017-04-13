@@ -18,7 +18,7 @@ using std::getline;
 
 /**
  * @struct 	Stats status.h
- * @brief	Tipo estrutura que agrega os dados de nascimento de um municipio
+ * @brief 	Tipo estrutura que agrega os dados de nascimento de um municipio
  * @details	Os dados cobrem os anos de 1994 a 2014
  */
 struct Stats {

@@ -3,8 +3,8 @@
  * @brief	Arquivo corpo com a implementacao das funcaes que
  *					realizam operacaoes estatisticas nos dados do arquivo
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
- * @since	12/04/2017
- * @date	12/04/2017
+ * @since	13/04/2017
+ * @date	13/04/2017
  */
 
 

@@ -1,10 +1,10 @@
 /**
  * @file	arquivos.h
- * @brief	Arquivo cabecalho com os protipos das funcaes que
+ * @brief	Arquivo cabecalho com os prototipos das funcaes que
  *					realizam leitura e escrita em arquivos
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
- * @since	12/04/2017
- * @date	12/04/2017
+ * @since	13/04/2017
+ * @date	13/04/2017
  */
 
 
@@ -20,7 +20,6 @@ using std::ifstream;
 using std::ofstream;
 
 #include <cstdlib>
-
 using std::atoi;
 
 #include "stats.h"
@@ -30,15 +29,15 @@ using std::atoi;
  *				e armazena em uma varialvel do tipo estrutura que contem
  *				os campos codigo e nome do municipio e o campo nascimento
  *				com o numero de nascimento a cada ano de 1994 a 2014 
- * @param	entrada	Variavel que referencia o arquivo de entrada
- * @param	municipios Grupo de municipios 
- * @param   tamanho	Quantidade de municipios
+ * @param entrada Variavel que referencia o arquivo de entrada
+ * @param municipios Grupo de municipios 
+ * @param tamanho Quantidade de municipios
  */
 void lerDados(ifstream &entrada, Stats* municipios, int tamanho);
 
 
 /**
- * @brief	Funcao que imprime em um arquivo os dados referentes ao ano e suas 
+ * @brief Funcao que imprime em um arquivo os dados referentes ao ano e suas 
  *					respectivas estatisticas em relacao ao numero de nascimentos 
  * @param saida Variavel que referencia o arquivo de saida
  * @param maior Maior numero de nascimentos em cada ano
@@ -57,5 +56,6 @@ void imprimirDadosEstatisticos(ofstream &saida, int *maior, int *menor, float *m
  * @param total Numero total de nascimentos
  */
 void imprimirDadosTotais(ofstream &saida, int *total);
+
 
 #endif

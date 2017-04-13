@@ -3,14 +3,13 @@
  * @brief   Codigo fonte de teste das funcoes que realizam operacoes
  * 					estatisticas com o dados do arquivo 
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
- * @since	12/04/2017
- * @date	12/04/2017
+ * @since	13/04/2017
+ * @date	13/04/2017
 */
 
 #include "estatisticas.h"
 #include "arquivos.h"
-#include "stats.h"
-
+#include "taxa.h"
 
 /**
  * @brief Funcao principal
@@ -91,7 +90,6 @@ int main(int argc, char* argv[]) {
 	total = total_nascimentos(municipios, contMunicipios);
 
 
-	delete[] municipios;
     //arquivo de saida para escrita de dados 
 	ofstream saida1("/home/lael/Atividade4/data/estatisticas.csv");
 	if(!saida1) {
@@ -118,6 +116,14 @@ int main(int argc, char* argv[]) {
 	imprimirDadosTotais(saida2, total);
 
 	delete[] total;
+
+	cout << "...Arquivo estatisticas.csv gerado" << endl;
+	cout << "...Arquivo totais.dat gerado" << endl;
+	cout << endl;
+	taxa_queda(municipios, contMunicipios);
+	taxa_crescimento(municipios, contMunicipios);
+
+	delete[] municipios;
 
 	return 0;
 }
