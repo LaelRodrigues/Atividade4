@@ -91,7 +91,7 @@ int main(int argc, char* argv[]) {
 
 
     //arquivo de saida para escrita de dados 
-	ofstream saida1("/home/lael/Atividade4/data/estatisticas.csv");
+	ofstream saida1("../data/estatisticas.csv");
 	if(!saida1) {
 		cout << "Erro ao abrir o arquivo!!" << endl;
 		cout << "Programa finalizado." << endl;
@@ -105,7 +105,7 @@ int main(int argc, char* argv[]) {
 	delete[] media;
 	delete[] desvio_padrao;
 	//arquivo de saida para escrita de dados
-	ofstream saida2("/home/lael/Atividade4/data/totais.dat");
+	ofstream saida2("../data/totais.dat");
 	if(!saida2) {
 		cout << "Erro ao abrir o arquivo!!" << endl;
 		cout << "Programa finalizado." << endl;
